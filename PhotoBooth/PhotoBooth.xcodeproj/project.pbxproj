@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */; };
+		5ECEDAF6261E43D200697735 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAF5261E43D200697735 /* UserImage.swift */; };
+		5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAFA261E43E000697735 /* UserImageDto.swift */; };
+		5ECEDB00261E451800697735 /* PictureRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAFF261E451800697735 /* PictureRepository.swift */; };
+		5ECEDB08261E453400697735 /* PictureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDB07261E453400697735 /* PictureInteractor.swift */; };
 		937BAEFE261E2A4F00A9B795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BAEFD261E2A4F00A9B795 /* AppDelegate.swift */; };
-		937BAF02261E2A4F00A9B795 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BAF01261E2A4F00A9B795 /* ViewController.swift */; };
+		937BAF02261E2A4F00A9B795 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BAF01261E2A4F00A9B795 /* MainMenuViewController.swift */; };
 		937BAF08261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 937BAF06261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld */; };
 		937BAF0A261E2A4F00A9B795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937BAF09261E2A4F00A9B795 /* Assets.xcassets */; };
 		937BAF0D261E2A4F00A9B795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937BAF0B261E2A4F00A9B795 /* LaunchScreen.storyboard */; };
@@ -33,9 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseService.swift; sourceTree = "<group>"; };
+		5ECEDAF5261E43D200697735 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
+		5ECEDAFA261E43E000697735 /* UserImageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageDto.swift; sourceTree = "<group>"; };
+		5ECEDAFF261E451800697735 /* PictureRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureRepository.swift; sourceTree = "<group>"; };
+		5ECEDB07261E453400697735 /* PictureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInteractor.swift; sourceTree = "<group>"; };
 		937BAEFA261E2A4F00A9B795 /* PhotoBooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937BAEFD261E2A4F00A9B795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		937BAF01261E2A4F00A9B795 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		937BAF01261E2A4F00A9B795 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		937BAF07261E2A4F00A9B795 /* PhotoBooth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoBooth.xcdatamodel; sourceTree = "<group>"; };
 		937BAF09261E2A4F00A9B795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937BAF0C261E2A4F00A9B795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +81,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E450189261E49C1003FE498 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				937BAF01261E2A4F00A9B795 /* MainMenuViewController.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		5E45018D261E49C6003FE498 /* TakeImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TakeImage;
+			sourceTree = "<group>";
+		};
+		5E45018E261E49ED003FE498 /* ViewImages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewImages;
+			sourceTree = "<group>";
+		};
+		5ECEDAE6261E42FD00697735 /* PictureDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */,
+				937BAF06261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld */,
+			);
+			path = PictureDatabase;
+			sourceTree = "<group>";
+		};
+		5ECEDAF3261E43BF00697735 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ECEDAF5261E43D200697735 /* UserImage.swift */,
+				5ECEDAFA261E43E000697735 /* UserImageDto.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5ECEDAF4261E43C400697735 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5E450189261E49C1003FE498 /* MainMenu */,
+				5E45018E261E49ED003FE498 /* ViewImages */,
+				5E45018D261E49C6003FE498 /* TakeImage */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		937BAEF1261E2A4F00A9B795 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +154,11 @@
 			isa = PBXGroup;
 			children = (
 				937BAEFD261E2A4F00A9B795 /* AppDelegate.swift */,
-				937BAF01261E2A4F00A9B795 /* ViewController.swift */,
-				937BAF06261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld */,
+				5ECEDB07261E453400697735 /* PictureInteractor.swift */,
+				5ECEDAFF261E451800697735 /* PictureRepository.swift */,
+				5ECEDAF4261E43C400697735 /* Views */,
+				5ECEDAF3261E43BF00697735 /* Models */,
+				5ECEDAE6261E42FD00697735 /* PictureDatabase */,
 				937BAF5D261E2D4400A9B795 /* SupportingFiles */,
 			);
 			path = PhotoBooth;
@@ -249,7 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937BAF02261E2A4F00A9B795 /* ViewController.swift in Sources */,
+				5ECEDAF6261E43D200697735 /* UserImage.swift in Sources */,
+				5ECEDB08261E453400697735 /* PictureInteractor.swift in Sources */,
+				5ECEDB00261E451800697735 /* PictureRepository.swift in Sources */,
+				937BAF02261E2A4F00A9B795 /* MainMenuViewController.swift in Sources */,
+				5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */,
+				5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */,
 				937BAF08261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld in Sources */,
 				937BAEFE261E2A4F00A9B795 /* AppDelegate.swift in Sources */,
 			);
@@ -585,7 +653,8 @@
 				937BAF07261E2A4F00A9B795 /* PhotoBooth.xcdatamodel */,
 			);
 			currentVersion = 937BAF07261E2A4F00A9B795 /* PhotoBooth.xcdatamodel */;
-			path = PhotoBooth.xcdatamodeld;
+			name = PhotoBooth.xcdatamodeld;
+			path = "../New Group/PhotoBooth.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
