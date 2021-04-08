@@ -21,7 +21,7 @@ final class PictureInteractor: PictureInteractorProtocol {
     }
 
     func save(image: UIImage) throws {
-        try repository.save(image: image, with: Date())
+        try repository.save(image: image, with: Date().timeIntervalSince1970)
     }
     func fetchUserImages() -> [UserImage] {
         repository.fetchUserImages()

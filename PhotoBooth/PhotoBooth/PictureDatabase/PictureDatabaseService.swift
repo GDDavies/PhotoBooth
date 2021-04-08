@@ -8,12 +8,12 @@
 import Foundation
 
 protocol PictureDatabaseServiceProtocol {
-    func save(imageData: Data, with date: Date)
+    func save(imageData: Data, with timestamp: Double)
     func fetchUserImageDtos() -> [UserImageDto]
 }
 
 final class PictureDatabaseService: PictureDatabaseServiceProtocol {
-    func save(imageData: Data, with date: Date) {
+    func save(imageData: Data, with timestamp: Double) {
         
     }
 

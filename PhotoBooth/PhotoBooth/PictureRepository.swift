@@ -8,7 +8,7 @@
 import UIKit
 
 protocol PictureRepositoryProtocol {
-    func save(image: UIImage, with date: Date) throws
+    func save(image: UIImage, with timestamp: Double) throws
     func fetchUserImages() -> [UserImage]
 }
 
@@ -20,11 +20,11 @@ final class PictureRepository: PictureRepositoryProtocol {
         self.databaseService = databaseService
     }
 
-    func save(image: UIImage, with date: Date) throws {
-        guard let imageData = image.pngData() else {
+    func save(image: UIImage, with timestamp: Double) throws {
+        guard let imageData = image.jpegData(compressionQuality: 1.0) else {
             throw PictureRepositoryError.genericError
         }
-        databaseService.save(imageData: imageData, with: date)
+        databaseService.save(imageData: imageData, with: timestamp)
     }
 
     func fetchUserImages() -> [UserImage] {
