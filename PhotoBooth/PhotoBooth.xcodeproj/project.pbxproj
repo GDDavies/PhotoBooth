@@ -10,6 +10,14 @@
 		5E450199261E4C08003FE498 /* PictureDatabaseServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E450198261E4C08003FE498 /* PictureDatabaseServiceMock.swift */; };
 		5E45019D261FA3BB003FE498 /* PictureRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */; };
 		5E4501A1261FA442003FE498 /* PictureInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */; };
+		5E4501B1261FA662003FE498 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501B0261FA662003FE498 /* MainMenuViewModel.swift */; };
+		5E4501B5261FAB5A003FE498 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501B4261FAB5A003FE498 /* Coordinator.swift */; };
+		5E4501BC261FAF3C003FE498 /* MainMenuViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501BB261FAF3C003FE498 /* MainMenuViewModelTests.swift */; };
+		5E4501C2261FAF66003FE498 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501C1261FAF66003FE498 /* GalleryViewController.swift */; };
+		5E4501CC261FAFB5003FE498 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501CB261FAFB5003FE498 /* CameraViewController.swift */; };
+		5E4501D0261FAFCC003FE498 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501CF261FAFCC003FE498 /* CameraViewModel.swift */; };
+		5E4501D4261FAFD4003FE498 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501D3261FAFD4003FE498 /* GalleryViewModel.swift */; };
+		5E4501D8261FB0D5003FE498 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E4501D7261FB0D5003FE498 /* README.md */; };
 		5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */; };
 		5ECEDAF6261E43D200697735 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAF5261E43D200697735 /* UserImage.swift */; };
 		5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAFA261E43E000697735 /* UserImageDto.swift */; };
@@ -37,6 +45,14 @@
 		5E450198261E4C08003FE498 /* PictureDatabaseServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseServiceMock.swift; sourceTree = "<group>"; };
 		5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureRepositoryMock.swift; sourceTree = "<group>"; };
 		5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInteractorTests.swift; sourceTree = "<group>"; };
+		5E4501B0261FA662003FE498 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenuViewModel.swift; path = ../../../../../../../MainMenuViewModel.swift; sourceTree = "<group>"; };
+		5E4501B4261FAB5A003FE498 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		5E4501BB261FAF3C003FE498 /* MainMenuViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModelTests.swift; sourceTree = "<group>"; };
+		5E4501C1261FAF66003FE498 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		5E4501CB261FAFB5003FE498 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5E4501CF261FAFCC003FE498 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		5E4501D3261FAFD4003FE498 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		5E4501D7261FB0D5003FE498 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseService.swift; sourceTree = "<group>"; };
 		5ECEDAF5261E43D200697735 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		5ECEDAFA261E43E000697735 /* UserImageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageDto.swift; sourceTree = "<group>"; };
@@ -76,22 +92,27 @@
 			isa = PBXGroup;
 			children = (
 				937BAF01261E2A4F00A9B795 /* MainMenuViewController.swift */,
+				5E4501B0261FA662003FE498 /* MainMenuViewModel.swift */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
 		};
-		5E45018D261E49C6003FE498 /* TakeImage */ = {
+		5E45018D261E49C6003FE498 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				5E4501CB261FAFB5003FE498 /* CameraViewController.swift */,
+				5E4501CF261FAFCC003FE498 /* CameraViewModel.swift */,
 			);
-			path = TakeImage;
+			path = Camera;
 			sourceTree = "<group>";
 		};
-		5E45018E261E49ED003FE498 /* ViewImages */ = {
+		5E45018E261E49ED003FE498 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				5E4501C1261FAF66003FE498 /* GalleryViewController.swift */,
+				5E4501D3261FAFD4003FE498 /* GalleryViewModel.swift */,
 			);
-			path = ViewImages;
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 		5E450192261E4B4C003FE498 /* Mocks */ = {
@@ -101,6 +122,14 @@
 				5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5E4501BA261FAF2F003FE498 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5E4501BB261FAF3C003FE498 /* MainMenuViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5ECEDAE6261E42FD00697735 /* PictureDatabase */ = {
@@ -125,8 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				5E450189261E49C1003FE498 /* MainMenu */,
-				5E45018E261E49ED003FE498 /* ViewImages */,
-				5E45018D261E49C6003FE498 /* TakeImage */,
+				5E45018E261E49ED003FE498 /* Gallery */,
+				5E45018D261E49C6003FE498 /* Camera */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -152,7 +181,9 @@
 		937BAEFC261E2A4F00A9B795 /* PhotoBooth */ = {
 			isa = PBXGroup;
 			children = (
+				5E4501D7261FB0D5003FE498 /* README.md */,
 				937BAEFD261E2A4F00A9B795 /* AppDelegate.swift */,
+				5E4501B4261FAB5A003FE498 /* Coordinator.swift */,
 				5ECEDB07261E453400697735 /* PictureInteractor.swift */,
 				5ECEDAFF261E451800697735 /* PictureRepository.swift */,
 				5ECEDAF4261E43C400697735 /* Views */,
@@ -166,6 +197,7 @@
 		937BAF16261E2A5000A9B795 /* PhotoBoothTests */ = {
 			isa = PBXGroup;
 			children = (
+				5E4501BA261FAF2F003FE498 /* ViewModels */,
 				5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */,
 				937BAF17261E2A5000A9B795 /* PictureRepositoryTests.swift */,
 				5E450192261E4B4C003FE498 /* Mocks */,
@@ -264,6 +296,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4501D8261FB0D5003FE498 /* README.md in Resources */,
 				937BAF0D261E2A4F00A9B795 /* LaunchScreen.storyboard in Resources */,
 				937BAF0A261E2A4F00A9B795 /* Assets.xcassets in Resources */,
 			);
@@ -284,13 +317,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECEDAF6261E43D200697735 /* UserImage.swift in Sources */,
+				5E4501D4261FAFD4003FE498 /* GalleryViewModel.swift in Sources */,
 				5ECEDB08261E453400697735 /* PictureInteractor.swift in Sources */,
+				5E4501B5261FAB5A003FE498 /* Coordinator.swift in Sources */,
 				5ECEDB00261E451800697735 /* PictureRepository.swift in Sources */,
 				937BAF02261E2A4F00A9B795 /* MainMenuViewController.swift in Sources */,
+				5E4501CC261FAFB5003FE498 /* CameraViewController.swift in Sources */,
 				5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */,
 				5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */,
 				937BAF08261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld in Sources */,
+				5E4501C2261FAF66003FE498 /* GalleryViewController.swift in Sources */,
 				937BAEFE261E2A4F00A9B795 /* AppDelegate.swift in Sources */,
+				5E4501B1261FA662003FE498 /* MainMenuViewModel.swift in Sources */,
+				5E4501D0261FAFCC003FE498 /* CameraViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E450199261E4C08003FE498 /* PictureDatabaseServiceMock.swift in Sources */,
+				5E4501BC261FAF3C003FE498 /* MainMenuViewModelTests.swift in Sources */,
 				5E4501A1261FA442003FE498 /* PictureInteractorTests.swift in Sources */,
 				5E45019D261FA3BB003FE498 /* PictureRepositoryMock.swift in Sources */,
 				937BAF18261E2A5000A9B795 /* PictureRepositoryTests.swift in Sources */,
