@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct UserImage {
-   let date: Date
-   let image: UIImage
+struct UserImage: Equatable {
+    let timestamp: Double
+    let image: UIImage
 }
