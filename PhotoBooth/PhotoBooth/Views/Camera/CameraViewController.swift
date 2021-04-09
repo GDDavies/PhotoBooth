@@ -9,6 +9,8 @@ import UIKit
 
 final class CameraViewController: UIViewController {
 
+    private lazy var cameraController = CameraController(view: view)
+
     // MARK: - Init
 
     init(viewModel: CameraViewModel) {
