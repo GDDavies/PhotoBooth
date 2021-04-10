@@ -20,7 +20,11 @@ class PictureRepositoryTests: XCTestCase {
 
     func testRepositoryThrowsWhenSavingInvalidImage() {
         do {
-            try pictureRepository.save(image: UIImage(), with: Date().timeIntervalSince1970)
+            try pictureRepository.save(
+                image: UIImage(),
+                with: "name",
+                at: Date().timeIntervalSince1970
+            )
             XCTFail()
         } catch let error {
             let pictureRepositoryError = try? XCTUnwrap(error as? PictureRepository.PictureRepositoryError)
@@ -32,7 +36,8 @@ class PictureRepositoryTests: XCTestCase {
         do {
             try pictureRepository.save(
                 image: UIImage(systemName: "circle")!,
-                with: Date().timeIntervalSince1970
+                with: "name",
+                at: Date().timeIntervalSince1970
             )
             XCTAssert(true)
         } catch {
@@ -42,22 +47,24 @@ class PictureRepositoryTests: XCTestCase {
 
     func testRepositoryFetchesSavedUserImageDtos() {
         do {
-            let firstTimestamp = Date().timeIntervalSince1970
-            let secondTimestamp = Date().timeIntervalSinceNow
+            let firstDate = Date(timeIntervalSinceReferenceDate: 0)
+            let secondDate = Date(timeIntervalSinceReferenceDate: 0)
             let image = UIImage(systemName: "circle")!
 
             try pictureRepository.save(
                 image: image,
-                with: firstTimestamp
+                with: "name",
+                at: firstDate.timeIntervalSince1970
             )
 
             try pictureRepository.save(
                 image: image,
-                with: secondTimestamp
+                with: "name",
+                at: secondDate.timeIntervalSince1970
             )
 
             let fetchedUserImages = pictureRepository.fetchUserImages()
-            XCTAssertEqual(fetchedUserImages.map { $0.timestamp }, [firstTimestamp, secondTimestamp])
+            XCTAssertEqual(fetchedUserImages.map { $0.date }, [firstDate, secondDate])
         } catch {
             XCTFail()
         }

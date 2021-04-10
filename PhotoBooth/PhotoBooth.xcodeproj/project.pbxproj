@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E10DDEE262192DC00FA3093 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10DDED262192DC00FA3093 /* GalleryTableViewCell.swift */; };
+		5E10DDF2262194CF00FA3093 /* GalleryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E10DDF1262194CF00FA3093 /* GalleryCellViewModel.swift */; };
+		5E1FD1692621CC870061031E /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD1682621CC870061031E /* SingleImageViewController.swift */; };
+		5E1FD16D2621CC9D0061031E /* SingleImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD16C2621CC9D0061031E /* SingleImageViewModel.swift */; };
+		5E1FD1712621DDE90061031E /* CameraViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD1702621DDE90061031E /* CameraViewModelTests.swift */; };
+		5E1FD1752621DDF30061031E /* GalleryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD1742621DDF30061031E /* GalleryViewModelTests.swift */; };
 		5E450199261E4C08003FE498 /* PictureDatabaseServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E450198261E4C08003FE498 /* PictureDatabaseServiceMock.swift */; };
 		5E45019D261FA3BB003FE498 /* PictureRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */; };
 		5E4501A1261FA442003FE498 /* PictureInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */; };
@@ -44,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E10DDED262192DC00FA3093 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
+		5E10DDF1262194CF00FA3093 /* GalleryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCellViewModel.swift; sourceTree = "<group>"; };
+		5E1FD1682621CC870061031E /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
+		5E1FD16C2621CC9D0061031E /* SingleImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewModel.swift; sourceTree = "<group>"; };
+		5E1FD1702621DDE90061031E /* CameraViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModelTests.swift; sourceTree = "<group>"; };
+		5E1FD1742621DDF30061031E /* GalleryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModelTests.swift; sourceTree = "<group>"; };
 		5E450198261E4C08003FE498 /* PictureDatabaseServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseServiceMock.swift; sourceTree = "<group>"; };
 		5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureRepositoryMock.swift; sourceTree = "<group>"; };
 		5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInteractorTests.swift; sourceTree = "<group>"; };
@@ -92,6 +104,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E10DDF52621956C00FA3093 /* GalleryCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E10DDED262192DC00FA3093 /* GalleryTableViewCell.swift */,
+				5E10DDF1262194CF00FA3093 /* GalleryCellViewModel.swift */,
+			);
+			path = GalleryCell;
+			sourceTree = "<group>";
+		};
+		5E1FD1672621CC730061031E /* SingleImage */ = {
+			isa = PBXGroup;
+			children = (
+				5E1FD1682621CC870061031E /* SingleImageViewController.swift */,
+				5E1FD16C2621CC9D0061031E /* SingleImageViewModel.swift */,
+			);
+			path = SingleImage;
+			sourceTree = "<group>";
+		};
 		5E450189261E49C1003FE498 /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +146,8 @@
 			children = (
 				5E4501C1261FAF66003FE498 /* GalleryViewController.swift */,
 				5E4501D3261FAFD4003FE498 /* GalleryViewModel.swift */,
+				5E10DDF52621956C00FA3093 /* GalleryCell */,
+				5E1FD1672621CC730061031E /* SingleImage */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -133,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				5E4501BB261FAF3C003FE498 /* MainMenuViewModelTests.swift */,
+				5E1FD1702621DDE90061031E /* CameraViewModelTests.swift */,
+				5E1FD1742621DDF30061031E /* GalleryViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -336,9 +370,12 @@
 				5E4501B5261FAB5A003FE498 /* Coordinator.swift in Sources */,
 				5ECEDB00261E451800697735 /* PictureRepository.swift in Sources */,
 				937BAF02261E2A4F00A9B795 /* MainMenuViewController.swift in Sources */,
+				5E1FD16D2621CC9D0061031E /* SingleImageViewModel.swift in Sources */,
+				5E1FD1692621CC870061031E /* SingleImageViewController.swift in Sources */,
 				5E4501CC261FAFB5003FE498 /* CameraViewController.swift in Sources */,
 				5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */,
 				5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */,
+				5E10DDEE262192DC00FA3093 /* GalleryTableViewCell.swift in Sources */,
 				5EB3ADA72620D077009E6106 /* CameraController.swift in Sources */,
 				937BAF08261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld in Sources */,
 				5E4501C2261FAF66003FE498 /* GalleryViewController.swift in Sources */,
@@ -346,6 +383,7 @@
 				937BAEFE261E2A4F00A9B795 /* AppDelegate.swift in Sources */,
 				5E4501B1261FA662003FE498 /* MainMenuViewModel.swift in Sources */,
 				5E4501D0261FAFCC003FE498 /* CameraViewModel.swift in Sources */,
+				5E10DDF2262194CF00FA3093 /* GalleryCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,10 +392,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E450199261E4C08003FE498 /* PictureDatabaseServiceMock.swift in Sources */,
+				5E1FD1752621DDF30061031E /* GalleryViewModelTests.swift in Sources */,
 				5E4501BC261FAF3C003FE498 /* MainMenuViewModelTests.swift in Sources */,
 				5E4501A1261FA442003FE498 /* PictureInteractorTests.swift in Sources */,
 				5E45019D261FA3BB003FE498 /* PictureRepositoryMock.swift in Sources */,
 				937BAF18261E2A5000A9B795 /* PictureRepositoryTests.swift in Sources */,
+				5E1FD1712621DDE90061031E /* CameraViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

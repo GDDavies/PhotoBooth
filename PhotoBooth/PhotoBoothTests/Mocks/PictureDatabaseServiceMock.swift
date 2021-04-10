@@ -11,10 +11,10 @@ import UIKit
 
 final class PictureDatabaseServiceMock: PictureDatabaseServiceProtocol {
 
-    private var userImageDtos: [UserImageDto] = []
+    var userImageDtos: [UserImageDto] = []
 
-    func save(imageData: Data, with timestamp: Double) {
-        let userImageDto = UserImageDto(timestamp: timestamp, imageData: imageData)
+    func save(imageData: Data, with name: String, at timestamp: Double) {
+        let userImageDto = UserImageDto(timestamp: timestamp, imageData: imageData, name: name)
         userImageDtos.append(userImageDto)
     }
 
