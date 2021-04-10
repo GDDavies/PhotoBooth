@@ -18,6 +18,8 @@
 		5E4501D0261FAFCC003FE498 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501CF261FAFCC003FE498 /* CameraViewModel.swift */; };
 		5E4501D4261FAFD4003FE498 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501D3261FAFD4003FE498 /* GalleryViewModel.swift */; };
 		5E4501D8261FB0D5003FE498 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E4501D7261FB0D5003FE498 /* README.md */; };
+		5EB3ADA72620D077009E6106 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3ADA62620D077009E6106 /* CameraController.swift */; };
+		5EB3ADB226211462009E6106 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3ADB126211462009E6106 /* AlertBuilder.swift */; };
 		5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */; };
 		5ECEDAF6261E43D200697735 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAF5261E43D200697735 /* UserImage.swift */; };
 		5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAFA261E43E000697735 /* UserImageDto.swift */; };
@@ -53,6 +55,8 @@
 		5E4501CF261FAFCC003FE498 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		5E4501D3261FAFD4003FE498 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		5E4501D7261FB0D5003FE498 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		5EB3ADA62620D077009E6106 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		5EB3ADB126211462009E6106 /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
 		5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseService.swift; sourceTree = "<group>"; };
 		5ECEDAF5261E43D200697735 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		5ECEDAFA261E43E000697735 /* UserImageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageDto.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			children = (
 				5E4501CB261FAFB5003FE498 /* CameraViewController.swift */,
 				5E4501CF261FAFCC003FE498 /* CameraViewModel.swift */,
+				5EB3ADA62620D077009E6106 /* CameraController.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -132,6 +137,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		5EB3ADB02621144B009E6106 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5EB3ADB126211462009E6106 /* AlertBuilder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		5ECEDAE6261E42FD00697735 /* PictureDatabase */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				5E450189261E49C1003FE498 /* MainMenu */,
-				5E45018E261E49ED003FE498 /* Gallery */,
 				5E45018D261E49C6003FE498 /* Camera */,
+				5E45018E261E49ED003FE498 /* Gallery */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +202,7 @@
 				5ECEDAF4261E43C400697735 /* Views */,
 				5ECEDAF3261E43BF00697735 /* Models */,
 				5ECEDAE6261E42FD00697735 /* PictureDatabase */,
+				5EB3ADB02621144B009E6106 /* Utilities */,
 				937BAF5D261E2D4400A9B795 /* SupportingFiles */,
 			);
 			path = PhotoBooth;
@@ -325,8 +339,10 @@
 				5E4501CC261FAFB5003FE498 /* CameraViewController.swift in Sources */,
 				5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */,
 				5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */,
+				5EB3ADA72620D077009E6106 /* CameraController.swift in Sources */,
 				937BAF08261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld in Sources */,
 				5E4501C2261FAF66003FE498 /* GalleryViewController.swift in Sources */,
+				5EB3ADB226211462009E6106 /* AlertBuilder.swift in Sources */,
 				937BAEFE261E2A4F00A9B795 /* AppDelegate.swift in Sources */,
 				5E4501B1261FA662003FE498 /* MainMenuViewModel.swift in Sources */,
 				5E4501D0261FAFCC003FE498 /* CameraViewModel.swift in Sources */,
