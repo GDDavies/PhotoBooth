@@ -10,6 +10,7 @@ import UIKit
 struct UserImageDto {
     let timestamp: Double
     let imageData: Data
+    let name: String
 }
 
 extension UserImageDto {
@@ -19,6 +20,6 @@ extension UserImageDto {
         else {
             return nil
         }
-        return UserImage(timestamp: timestamp, image: image)
+        return UserImage(timestamp: timestamp, image: image, name: name)
     }
 }

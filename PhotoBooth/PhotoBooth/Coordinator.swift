@@ -31,7 +31,10 @@ final class MainCoordinator {
 
     func didTapTakePictureButton() {
         let cameraViewModel = CameraViewModel()
-        let cameraViewController = CameraViewController(viewModel: cameraViewModel)
+        let cameraViewController = CameraViewController(
+            viewModel: cameraViewModel,
+            coordinator: self
+        )
         navigationController.pushViewController(cameraViewController, animated: true)
     }
 
@@ -39,5 +42,9 @@ final class MainCoordinator {
         let galleryViewModel = GalleryViewModel()
         let galleryViewController = GalleryViewController(viewModel: galleryViewModel)
         navigationController.pushViewController(galleryViewController, animated: true)
+    }
+
+    func pop(animated: Bool = true) {
+        navigationController.popViewController(animated: animated)
     }
 }

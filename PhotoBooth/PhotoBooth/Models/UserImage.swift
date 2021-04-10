@@ -10,4 +10,5 @@ import UIKit
 struct UserImage: Equatable {
     let timestamp: Double
     let image: UIImage
+    let name: String
 }
