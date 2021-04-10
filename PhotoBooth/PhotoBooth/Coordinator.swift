@@ -19,13 +19,8 @@ final class MainCoordinator {
     }
 
     func start() {
-        let mainMenuViewModel = MainMenuViewModel(
-            title: NSLocalizedString("Photo Booth", comment: ""),
-            takeImageTitle: NSLocalizedString("Take picture", comment: ""),
-            viewImagesTitle: NSLocalizedString("View pictures", comment: "")
-        )
         let mainMenuViewController = MainMenuViewController(
-            viewModel: mainMenuViewModel,
+            viewModel: MainMenuViewModel(),
             coordinator: self
         )
         navigationController.pushViewController(mainMenuViewController, animated: false)

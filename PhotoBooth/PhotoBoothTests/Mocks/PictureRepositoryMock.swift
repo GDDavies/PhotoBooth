@@ -13,8 +13,12 @@ final class PictureRepositoryMock: PictureRepositoryProtocol {
 
     private var userImages: [UserImage] = []
 
-    func save(image: UIImage, with timestamp: Double) throws {
-        let userImage = UserImage(timestamp: timestamp, image: image)
+    func save(image: UIImage, with name: String, at timestamp: Double) throws {
+        let userImage = UserImage(
+            image: image,
+            name: name,
+            date: Date(timeIntervalSince1970: timestamp)
+        )
         userImages.append(userImage)
     }
 

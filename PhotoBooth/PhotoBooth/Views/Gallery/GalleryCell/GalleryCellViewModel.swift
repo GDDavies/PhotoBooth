@@ -18,6 +18,12 @@ struct GalleryCellViewModel {
         return dateFormatter
     }()
 
+    init(image: UIImage, name: String, date: String) {
+        self.image = image
+        self.name = name
+        self.date = date
+    }
+
     init(userImage: UserImage) {
         image = userImage.image
         name = userImage.name

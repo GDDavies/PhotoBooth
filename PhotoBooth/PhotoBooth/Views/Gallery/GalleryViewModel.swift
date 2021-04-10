@@ -13,7 +13,7 @@ final class GalleryViewModel {
 
     init(pictureInteractor: PictureInteractorProtocol) {
         let userImages = pictureInteractor.fetchUserImages()
-        cellModels = userImages.compactMap { GalleryCellViewModel(userImage: $0) }
+        cellModels = userImages.map { GalleryCellViewModel(userImage: $0) }
     }
 
     convenience init(pictureDatabaseService: PictureDatabaseServiceProtocol) {

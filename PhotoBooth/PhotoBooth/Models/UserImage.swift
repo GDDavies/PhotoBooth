@@ -8,7 +8,7 @@
 import UIKit
 
 struct UserImage: Equatable {
-    let date: Date
     let image: UIImage
     let name: String
+    let date: Date
 }
