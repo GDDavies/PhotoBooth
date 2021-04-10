@@ -8,5 +8,6 @@
 import UIKit
 
 struct SingleImageViewModel {
+    let title: String
     let image: UIImage
 }

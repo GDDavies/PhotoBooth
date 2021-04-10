@@ -12,6 +12,7 @@ final class MainCoordinator {
     private let pictureDatabaseService = PictureDatabaseService()
 
     private(set) var navigationController: UINavigationController
+    private var presentedNavigationController: UINavigationController?
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -41,8 +42,21 @@ final class MainCoordinator {
         navigationController.pushViewController(galleryViewController, animated: true)
     }
 
-    func didTapViewIndividualImage(image: UIImage) {
-        
+    func didTapViewIndividualImage(image: UIImage, name: String) {
+        let singleImageViewModel = SingleImageViewModel(title: name, image: image)
+        let singleImageViewController = SingleImageViewController(
+            viewModel: singleImageViewModel,
+            coordinator: self
+        )
+        let singleImageViewNavigationController = UINavigationController(rootViewController: singleImageViewController)
+        self.presentedNavigationController = singleImageViewNavigationController
+        navigationController.present(singleImageViewNavigationController, animated: true)
+    }
+
+    func dismissPresentedNavigationController(animated: Bool = true) {
+        presentedNavigationController?.dismiss(animated: true) {
+            self.presentedNavigationController = nil
+        }
     }
 
     func pop(animated: Bool = true) {
