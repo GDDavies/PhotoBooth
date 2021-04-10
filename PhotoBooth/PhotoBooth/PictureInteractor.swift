@@ -16,8 +16,14 @@ final class PictureInteractor: PictureInteractorProtocol {
 
     private let repository: PictureRepositoryProtocol
 
-    init(repository: PictureRepositoryProtocol = PictureRepository()) {
+    init(repository: PictureRepositoryProtocol) {
         self.repository = repository
+    }
+
+    convenience init(pictureDatabaseService: PictureDatabaseServiceProtocol) {
+        self.init(
+            repository: PictureRepository(databaseService: pictureDatabaseService)
+        )
     }
 
     func save(image: UIImage, with name: String) throws {

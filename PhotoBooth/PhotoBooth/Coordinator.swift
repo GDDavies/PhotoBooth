@@ -9,6 +9,8 @@ import UIKit
 
 final class MainCoordinator {
 
+    private let pictureDatabaseService = PictureDatabaseService()
+
     private(set) var navigationController: UINavigationController
 
     init(navigationController: UINavigationController) {
@@ -30,7 +32,7 @@ final class MainCoordinator {
     }
 
     func didTapTakePictureButton() {
-        let cameraViewModel = CameraViewModel()
+        let cameraViewModel = CameraViewModel(pictureDatabaseService: pictureDatabaseService)
         let cameraViewController = CameraViewController(
             viewModel: cameraViewModel,
             coordinator: self
@@ -39,9 +41,13 @@ final class MainCoordinator {
     }
 
     func didTapViewPicturesButton() {
-        let galleryViewModel = GalleryViewModel()
-        let galleryViewController = GalleryViewController(viewModel: galleryViewModel)
+        let galleryViewModel = GalleryViewModel(pictureDatabaseService: pictureDatabaseService)
+        let galleryViewController = GalleryViewController(viewModel: galleryViewModel, coordinator: self)
         navigationController.pushViewController(galleryViewController, animated: true)
+    }
+
+    func didTapViewIndividualImage(image: UIImage) {
+        
     }
 
     func pop(animated: Bool = true) {

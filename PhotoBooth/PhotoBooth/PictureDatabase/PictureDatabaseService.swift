@@ -13,11 +13,15 @@ protocol PictureDatabaseServiceProtocol {
 }
 
 final class PictureDatabaseService: PictureDatabaseServiceProtocol {
+
+    var temp: [UserImageDto] = []
+
     func save(imageData: Data, with name: String, at timestamp: Double) {
-        
+        let userImageDto = UserImageDto(timestamp: timestamp, imageData: imageData, name: name)
+        temp.append(userImageDto)
     }
 
     func fetchUserImageDtos() -> [UserImageDto] {
-        return []
+        temp
     }
 }

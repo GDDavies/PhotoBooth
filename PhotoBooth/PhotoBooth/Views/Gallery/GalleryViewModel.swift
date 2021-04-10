@@ -8,5 +8,18 @@
 import Foundation
 
 final class GalleryViewModel {
-    
+
+    let cellModels: [GalleryCellViewModel]
+
+    init(pictureInteractor: PictureInteractorProtocol) {
+        let userImages = pictureInteractor.fetchUserImages()
+        cellModels = userImages.compactMap { GalleryCellViewModel(userImage: $0) }
+    }
+
+    convenience init(pictureDatabaseService: PictureDatabaseServiceProtocol) {
+        let repository = PictureRepository(databaseService: pictureDatabaseService)
+        self.init(
+            pictureInteractor: PictureInteractor(repository: repository)
+        )
+    }
 }

@@ -11,8 +11,15 @@ final class CameraViewModel {
 
     private let pictureInteractor: PictureInteractorProtocol
 
-    init(pictureInteractor: PictureInteractorProtocol = PictureInteractor()) {
+    init(pictureInteractor: PictureInteractorProtocol) {
         self.pictureInteractor = pictureInteractor
+    }
+
+    convenience init(pictureDatabaseService: PictureDatabaseServiceProtocol) {
+        let repository = PictureRepository(databaseService: pictureDatabaseService)
+        self.init(
+            pictureInteractor: PictureInteractor(repository: repository)
+        )
     }
 
     func save(image: UIImage, withName name: String) throws {

@@ -20,6 +20,6 @@ extension UserImageDto {
         else {
             return nil
         }
-        return UserImage(timestamp: timestamp, image: image, name: name)
+        return UserImage(date: Date(timeIntervalSince1970: timestamp), image: image, name: name)
     }
 }
