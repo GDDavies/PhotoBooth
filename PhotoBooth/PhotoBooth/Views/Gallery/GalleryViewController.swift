@@ -59,8 +59,8 @@ final class GalleryViewController: UIViewController {
 
 extension GalleryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedImage = viewModel.cellModels[indexPath.item].image
-        coordinator?.didTapViewIndividualImage(image: selectedImage)
+        let selectedUserImage = viewModel.cellModels[indexPath.item]
+        coordinator?.didTapViewIndividualImage(image: selectedUserImage.image, name: selectedUserImage.name)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
