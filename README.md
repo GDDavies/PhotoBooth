@@ -29,6 +29,8 @@ The app works in both light and dark mode.
 
 ##  Future updates
 
+* Improve performance when tapping on `Take photo`, to do with the initialization and setup of `CameraController`
+* More tests, for example converting Dto to domain object and tests for `CameraController`
 * Validation on image name, for example name minimum and maximum length
 * Database fetch paging so if the user has a large number of photos stored we can fetch a limited number per request
 * Wrapper around the CoreData implementation to allow easier saving/fetching of different types
