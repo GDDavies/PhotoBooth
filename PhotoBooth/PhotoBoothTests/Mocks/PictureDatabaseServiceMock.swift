@@ -13,12 +13,11 @@ final class PictureDatabaseServiceMock: PictureDatabaseServiceProtocol {
 
     var userImageDtos: [UserImageDto] = []
 
-    func save(imageData: Data, with name: String, at timestamp: Double) {
-        let userImageDto = UserImageDto(timestamp: timestamp, imageData: imageData, name: name)
+    func save(userImageDto: UserImageDto) throws {
         userImageDtos.append(userImageDto)
     }
 
-    func fetchUserImageDtos() -> [UserImageDto] {
-        userImageDtos
+    func fetchUserImageDtos() -> Result<[UserImageDto], Error> {
+        .success(userImageDtos)
     }
 }

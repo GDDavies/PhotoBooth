@@ -12,8 +12,14 @@ final class GalleryViewModel {
     let cellModels: [GalleryCellViewModel]
 
     init(pictureInteractor: PictureInteractorProtocol) {
-        let userImages = pictureInteractor.fetchUserImages()
-        cellModels = userImages.map { GalleryCellViewModel(userImage: $0) }
+        let userImagesResult = pictureInteractor.fetchUserImages()
+        switch userImagesResult {
+        case let .success(userImages):
+            cellModels = userImages.map { GalleryCellViewModel(userImage: $0) }
+
+        case .failure:
+            cellModels = []
+        }
     }
 
     convenience init(pictureDatabaseService: PictureDatabaseServiceProtocol) {

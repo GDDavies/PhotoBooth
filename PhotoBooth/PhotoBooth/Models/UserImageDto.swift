@@ -8,22 +8,25 @@
 import UIKit
 
 struct UserImageDto {
-    let timestamp: Double
-    let imageData: Data
     let name: String
+    let timestamp: Double
+    let image: Data
+    let thumbnail: Data
 }
 
 extension UserImageDto {
     func toDomain() -> UserImage? {
         guard
-            let image = UIImage(data: imageData)
+            let image = UIImage(data: image),
+            let thumbnail = UIImage(data: thumbnail)
         else {
             return nil
         }
         return UserImage(
-            image: image,
             name: name,
-            date: Date(timeIntervalSince1970: timestamp)
+            date: Date(timeIntervalSince1970: timestamp),
+            image: image,
+            thumbnail: thumbnail
         )
     }
 }

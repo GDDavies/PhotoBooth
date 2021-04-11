@@ -15,14 +15,15 @@ final class PictureRepositoryMock: PictureRepositoryProtocol {
 
     func save(image: UIImage, with name: String, at timestamp: Double) throws {
         let userImage = UserImage(
-            image: image,
             name: name,
-            date: Date(timeIntervalSince1970: timestamp)
+            date: Date(timeIntervalSince1970: timestamp),
+            image: image,
+            thumbnail: image
         )
         userImages.append(userImage)
     }
 
-    func fetchUserImages() -> [UserImage] {
-        userImages
+    func fetchUserImages() -> Result<[UserImage], Error> {
+        .success(userImages)
     }
 }

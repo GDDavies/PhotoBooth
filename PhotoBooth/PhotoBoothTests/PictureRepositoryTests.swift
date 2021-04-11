@@ -53,18 +53,28 @@ class PictureRepositoryTests: XCTestCase {
 
             try pictureRepository.save(
                 image: image,
-                with: "name",
+                with: "name 1",
                 at: firstDate.timeIntervalSince1970
             )
 
             try pictureRepository.save(
                 image: image,
-                with: "name",
+                with: "name 2",
                 at: secondDate.timeIntervalSince1970
             )
 
-            let fetchedUserImages = pictureRepository.fetchUserImages()
-            XCTAssertEqual(fetchedUserImages.map { $0.date }, [firstDate, secondDate])
+            let fetchedUserImagesResult = pictureRepository.fetchUserImages()
+            switch fetchedUserImagesResult {
+            case let .success(userImages):
+                XCTAssertEqual(userImages.map { $0.date }, [firstDate, secondDate])
+                XCTAssertEqual(userImages.map { $0.name }, ["name 1", "name 2"])
+                let scaledImageSide = 60 * UIScreen.main.scale
+                let expectedImageSize = CGSize(width: scaledImageSide, height: scaledImageSide)
+                XCTAssert(userImages.allSatisfy { $0.thumbnail.size == expectedImageSize })
+
+            case .failure:
+                XCTFail()
+            }
         } catch {
             XCTFail()
         }

@@ -130,6 +130,7 @@ final class CameraViewController: UIViewController {
     }
 
     private func didTapOK(alertController: UIAlertController) {
+        resetViews()
         alertController.dismiss(animated: true)
     }
 
