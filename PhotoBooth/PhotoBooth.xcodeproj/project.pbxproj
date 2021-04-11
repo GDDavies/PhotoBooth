@@ -13,6 +13,7 @@
 		5E1FD16D2621CC9D0061031E /* SingleImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD16C2621CC9D0061031E /* SingleImageViewModel.swift */; };
 		5E1FD1712621DDE90061031E /* CameraViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD1702621DDE90061031E /* CameraViewModelTests.swift */; };
 		5E1FD1752621DDF30061031E /* GalleryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD1742621DDF30061031E /* GalleryViewModelTests.swift */; };
+		5E1FD187262243830061031E /* DBUserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1FD186262243830061031E /* DBUserImage.swift */; };
 		5E450199261E4C08003FE498 /* PictureDatabaseServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E450198261E4C08003FE498 /* PictureDatabaseServiceMock.swift */; };
 		5E45019D261FA3BB003FE498 /* PictureRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */; };
 		5E4501A1261FA442003FE498 /* PictureInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */; };
@@ -56,6 +57,7 @@
 		5E1FD16C2621CC9D0061031E /* SingleImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewModel.swift; sourceTree = "<group>"; };
 		5E1FD1702621DDE90061031E /* CameraViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModelTests.swift; sourceTree = "<group>"; };
 		5E1FD1742621DDF30061031E /* GalleryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModelTests.swift; sourceTree = "<group>"; };
+		5E1FD186262243830061031E /* DBUserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUserImage.swift; sourceTree = "<group>"; };
 		5E450198261E4C08003FE498 /* PictureDatabaseServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseServiceMock.swift; sourceTree = "<group>"; };
 		5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureRepositoryMock.swift; sourceTree = "<group>"; };
 		5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInteractorTests.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				5ECEDAF5261E43D200697735 /* UserImage.swift */,
 				5ECEDAFA261E43E000697735 /* UserImageDto.swift */,
+				5E1FD186262243830061031E /* DBUserImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				937BAF02261E2A4F00A9B795 /* MainMenuViewController.swift in Sources */,
 				5E1FD16D2621CC9D0061031E /* SingleImageViewModel.swift in Sources */,
 				5E1FD1692621CC870061031E /* SingleImageViewController.swift in Sources */,
+				5E1FD187262243830061031E /* DBUserImage.swift in Sources */,
 				5E4501CC261FAFB5003FE498 /* CameraViewController.swift in Sources */,
 				5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */,
 				5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */,

@@ -70,7 +70,7 @@ final class GalleryTableViewCell: UITableViewCell {
     // MARK: - Setup
 
     func update(with model: GalleryCellViewModel) {
-        thumbnailImageView.image = model.image
+        thumbnailImageView.image = model.thumbnail
         titleLabel.text = model.name
         dateLabel.text = model.date
     }

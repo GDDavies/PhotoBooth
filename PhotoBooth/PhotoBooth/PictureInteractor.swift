@@ -9,7 +9,7 @@ import UIKit
 
 protocol PictureInteractorProtocol {
     func save(image: UIImage, with name: String) throws
-    func fetchUserImages() -> [UserImage]
+    func fetchUserImages() -> Result<[UserImage], Error>
 }
 
 final class PictureInteractor: PictureInteractorProtocol {
@@ -29,7 +29,7 @@ final class PictureInteractor: PictureInteractorProtocol {
     func save(image: UIImage, with name: String) throws {
         try repository.save(image: image, with: name, at: Date().timeIntervalSince1970)
     }
-    func fetchUserImages() -> [UserImage] {
+    func fetchUserImages() -> Result<[UserImage], Error> {
         repository.fetchUserImages()
     }
 }

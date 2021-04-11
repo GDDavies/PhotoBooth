@@ -8,9 +8,10 @@
 import UIKit
 
 struct GalleryCellViewModel {
-    let image: UIImage
     let name: String
     let date: String
+    let image: UIImage
+    let thumbnail: UIImage
 
     private static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -18,15 +19,17 @@ struct GalleryCellViewModel {
         return dateFormatter
     }()
 
-    init(image: UIImage, name: String, date: String) {
-        self.image = image
+    init(name: String, date: String, image: UIImage, thumbnail: UIImage) {
         self.name = name
         self.date = date
+        self.image = image
+        self.thumbnail = thumbnail
     }
 
     init(userImage: UserImage) {
-        image = userImage.image
         name = userImage.name
         date = Self.dateFormatter.string(from: userImage.date)
+        image = userImage.image
+        thumbnail = userImage.thumbnail
     }
 }

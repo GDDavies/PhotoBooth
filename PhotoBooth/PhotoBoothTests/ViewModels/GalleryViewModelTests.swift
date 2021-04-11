@@ -49,15 +49,17 @@ class GalleryViewModelTests: XCTestCase {
     private func userImages(count: Int) -> [(UserImageDto, GalleryCellViewModel)] {
         (0..<count).map {
             let dto = UserImageDto(
+                name: "name " + $0.description,
                 timestamp: Double($0),
-                imageData: image.pngData()!,
-                name: "name " + $0.description
+                image: image.pngData()!,
+                thumbnail: image.pngData()!
             )
 
             let cellModel = GalleryCellViewModel(
-                image: image,
                 name: "name " + $0.description,
-                date: Self.dateFormatter.string(from: Date(timeIntervalSince1970: Double($0)))
+                date: Self.dateFormatter.string(from: Date(timeIntervalSince1970: Double($0))),
+                image: image,
+                thumbnail: image
             )
             return (dto, cellModel)
         }

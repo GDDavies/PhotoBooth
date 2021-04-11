@@ -21,6 +21,12 @@ class PictureInteractorTests: XCTestCase {
     func testSaveAndFetchImage() throws {
         let image = UIImage(systemName: "circle")!
         try pictureInteractor.save(image: image, with: "name")
-        XCTAssertEqual(pictureInteractor.fetchUserImages().first?.image, image)
+        switch pictureInteractor.fetchUserImages() {
+        case let .success(userImages):
+            XCTAssertEqual(userImages.first?.image, image)
+
+        case .failure:
+            XCTFail()
+        }
     }
 }
