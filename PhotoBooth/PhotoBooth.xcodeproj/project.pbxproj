@@ -27,6 +27,7 @@
 		5E4501D8261FB0D5003FE498 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5E4501D7261FB0D5003FE498 /* README.md */; };
 		5EB3ADA72620D077009E6106 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3ADA62620D077009E6106 /* CameraController.swift */; };
 		5EB3ADB226211462009E6106 /* AlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3ADB126211462009E6106 /* AlertBuilder.swift */; };
+		5EBD83162622F24400F03E63 /* PhotoBooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD83142622F24400F03E63 /* PhotoBooth.xcdatamodeld */; };
 		5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */; };
 		5ECEDAF6261E43D200697735 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAF5261E43D200697735 /* UserImage.swift */; };
 		5ECEDAFB261E43E000697735 /* UserImageDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDAFA261E43E000697735 /* UserImageDto.swift */; };
@@ -34,7 +35,6 @@
 		5ECEDB08261E453400697735 /* PictureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEDB07261E453400697735 /* PictureInteractor.swift */; };
 		937BAEFE261E2A4F00A9B795 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BAEFD261E2A4F00A9B795 /* AppDelegate.swift */; };
 		937BAF02261E2A4F00A9B795 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BAF01261E2A4F00A9B795 /* MainMenuViewController.swift */; };
-		937BAF08261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 937BAF06261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld */; };
 		937BAF0A261E2A4F00A9B795 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937BAF09261E2A4F00A9B795 /* Assets.xcassets */; };
 		937BAF0D261E2A4F00A9B795 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937BAF0B261E2A4F00A9B795 /* LaunchScreen.storyboard */; };
 		937BAF18261E2A5000A9B795 /* PictureRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BAF17261E2A5000A9B795 /* PictureRepositoryTests.swift */; };
@@ -61,7 +61,7 @@
 		5E450198261E4C08003FE498 /* PictureDatabaseServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseServiceMock.swift; sourceTree = "<group>"; };
 		5E45019C261FA3BA003FE498 /* PictureRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureRepositoryMock.swift; sourceTree = "<group>"; };
 		5E4501A0261FA442003FE498 /* PictureInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureInteractorTests.swift; sourceTree = "<group>"; };
-		5E4501B0261FA662003FE498 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenuViewModel.swift; path = ../../../../../../../MainMenuViewModel.swift; sourceTree = "<group>"; };
+		5E4501B0261FA662003FE498 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		5E4501B4261FAB5A003FE498 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		5E4501BB261FAF3C003FE498 /* MainMenuViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModelTests.swift; sourceTree = "<group>"; };
 		5E4501C1261FAF66003FE498 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 		5E4501D7261FB0D5003FE498 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		5EB3ADA62620D077009E6106 /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		5EB3ADB126211462009E6106 /* AlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBuilder.swift; sourceTree = "<group>"; };
+		5EBD83152622F24400F03E63 /* PhotoBooth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoBooth.xcdatamodel; sourceTree = "<group>"; };
 		5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDatabaseService.swift; sourceTree = "<group>"; };
 		5ECEDAF5261E43D200697735 /* UserImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		5ECEDAFA261E43E000697735 /* UserImageDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageDto.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		937BAEFA261E2A4F00A9B795 /* PhotoBooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937BAEFD261E2A4F00A9B795 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		937BAF01261E2A4F00A9B795 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		937BAF07261E2A4F00A9B795 /* PhotoBooth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoBooth.xcdatamodel; sourceTree = "<group>"; };
 		937BAF09261E2A4F00A9B795 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		937BAF0C261E2A4F00A9B795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		937BAF0E261E2A4F00A9B795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				5ECEDAEA261E431D00697735 /* PictureDatabaseService.swift */,
-				937BAF06261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld */,
+				5EBD83142622F24400F03E63 /* PhotoBooth.xcdatamodeld */,
 			);
 			path = PictureDatabase;
 			sourceTree = "<group>";
@@ -381,11 +381,11 @@
 				5ECEDAEB261E431D00697735 /* PictureDatabaseService.swift in Sources */,
 				5E10DDEE262192DC00FA3093 /* GalleryTableViewCell.swift in Sources */,
 				5EB3ADA72620D077009E6106 /* CameraController.swift in Sources */,
-				937BAF08261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld in Sources */,
 				5E4501C2261FAF66003FE498 /* GalleryViewController.swift in Sources */,
 				5EB3ADB226211462009E6106 /* AlertBuilder.swift in Sources */,
 				937BAEFE261E2A4F00A9B795 /* AppDelegate.swift in Sources */,
 				5E4501B1261FA662003FE498 /* MainMenuViewModel.swift in Sources */,
+				5EBD83162622F24400F03E63 /* PhotoBooth.xcdatamodeld in Sources */,
 				5E4501D0261FAFCC003FE498 /* CameraViewModel.swift in Sources */,
 				5E10DDF2262194CF00FA3093 /* GalleryCellViewModel.swift in Sources */,
 			);
@@ -660,14 +660,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		937BAF06261E2A4F00A9B795 /* PhotoBooth.xcdatamodeld */ = {
+		5EBD83142622F24400F03E63 /* PhotoBooth.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				937BAF07261E2A4F00A9B795 /* PhotoBooth.xcdatamodel */,
+				5EBD83152622F24400F03E63 /* PhotoBooth.xcdatamodel */,
 			);
-			currentVersion = 937BAF07261E2A4F00A9B795 /* PhotoBooth.xcdatamodel */;
-			name = PhotoBooth.xcdatamodeld;
-			path = "../New Group/PhotoBooth.xcdatamodeld";
+			currentVersion = 5EBD83152622F24400F03E63 /* PhotoBooth.xcdatamodel */;
+			path = PhotoBooth.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
