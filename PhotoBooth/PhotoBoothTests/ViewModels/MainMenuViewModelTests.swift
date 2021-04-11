@@ -19,8 +19,8 @@ class MainMenuViewModelTests: XCTestCase {
 
     func testStringsAreCorrect() {
         XCTAssertEqual(viewModel.title, "Photo Booth")
-        XCTAssertEqual(viewModel.takeImageTitle, "Take picture")
-        XCTAssertEqual(viewModel.viewImagesTitle, "View pictures")
+        XCTAssertEqual(viewModel.takeImageTitle, "Take photo")
+        XCTAssertEqual(viewModel.viewImagesTitle, "View photos")
     }
 
 }
