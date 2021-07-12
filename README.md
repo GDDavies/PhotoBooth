@@ -6,7 +6,7 @@ There are no third-part dependencies used in this project so just open the `.xco
 
 ##  Approach
 
-This is a basic MVP which has the requested functionality:
+This is a basic MVP which has the following functionality:
 
 * Take and name a photo
 * View all previously taken photos along with their names and date/time taken
